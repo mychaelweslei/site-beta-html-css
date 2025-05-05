@@ -1,0 +1,9 @@
+# Ignore node_modules (caso utilize npm no futuro)
+node_modules/
+
+# Cache do sistema
+.DS_Store
+
+# Arquivos temporários de edição
+*.log
+*.tmp
