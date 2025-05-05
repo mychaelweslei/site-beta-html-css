@@ -1,0 +1,252 @@
+/* Resetando margens e paddings e configurando o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;  /* Fundo preto */
+    color: #fff;  /* Texto branco */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header - Barra de navegação */
+header {
+    background-color: #1f1f1f; /* Cor de fundo preta */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.5s ease;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav .logo a {
+    color: #fff; /* Logo branco */
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ccc; /* Cor de hover em cinza */
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+/* Seção Hero */
+.hero {
+    background: url('path_to_your_hero_image.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    animation: heroAnimation 2s ease-in-out;
+}
+
+/* Efeito de flutuação para o texto */
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff; /* Cor do texto */
+    animation: floatText 4s ease-in-out infinite; /* Animação de flutuação contínua */
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Keyframes para o efeito de flutuação */
+@keyframes floatText {
+    0% {
+        transform: translateY(0); /* Começa na posição original */
+        opacity: 0.8; /* Opacidade inicial */
+    }
+    50% {
+        transform: translateY(-20px); /* Movimenta o texto para cima */
+        opacity: 1; /* Aumenta a opacidade */
+    }
+    100% {
+        transform: translateY(0); /* Volta para a posição original */
+        opacity: 0.8; /* Retorna à opacidade inicial */
+    }
+}
+
+/* Efeito de digitação para o texto "Transforme seu negócio com marketing digital" */
+@keyframes typingText {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* Botão de chamada para ação */
+.cta-button {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #444;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de flutuação no hero */
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: floatText 4s ease-in-out infinite; /* Efeito de flutuação */
+}
+
+/* Cards de serviço */
+.services {
+    padding: 80px 0;
+    background-color: #1c1c1c;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.service {
+    background-color: #333;
+    padding: 40px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: #444;
+}
+
+.service i {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+footer .social-media a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #ccc;
+    transform: scale(1.2);
+}
+
+/* Rodapé - Informações de criação */
+footer p:after {
+    content: " - Criado por Wesley";
+    font-style: italic;
+    font-weight: normal;
+    color: #fff;
+}
+
+/* Efeito de interação em botões, links, e seções interativas */
+button, a {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    color: #fff;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+/* Efeito de flutuação nas seções */
+.services, .contact-info {
+    position: relative;
+    animation: floatUp 1s ease-in-out;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

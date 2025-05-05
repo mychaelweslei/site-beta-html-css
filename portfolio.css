@@ -1,0 +1,147 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor do fundo e da fonte */
+body {
+    background-color: #1f1f1f; /* Cor de fundo escura */
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Logo */
+#logo {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Menu de navegação */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+nav ul li {
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cor de destaque */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.hero h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+/* Portfolio Section */
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background-color: #333;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item .portfolio-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item .portfolio-details p {
+    font-size: 18px;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cta h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cta button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+}
